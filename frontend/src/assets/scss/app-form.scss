@@ -1,0 +1,39 @@
+form {
+  margin: 1rem;
+  padding: 1rem;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .form-control {
+    margin: 0.5rem 0;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+
+  label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    font: inherit;
+    border: 1px solid #ccc;
+    padding: 0.15rem;
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: none;
+  }
+}
