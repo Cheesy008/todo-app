@@ -7,9 +7,10 @@ from .serializers import TaskSerializer
 from .models import Task
 from .tasks import send_email_stats
 from .services import calculate_stats
+from utils.error_mixin import ApiErrorsMixin
 
 
-class TaskViewSet(viewsets.ModelViewSet):
+class TaskViewSet(ApiErrorsMixin, viewsets.ModelViewSet):
     serializer_class = TaskSerializer
     filter_backends = (
         DjangoFilterBackend,
