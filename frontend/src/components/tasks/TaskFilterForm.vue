@@ -18,7 +18,7 @@
         </select>
     </span>
     <span class="filter-option">
-      <label>Дэдлайн</label>
+      <label>Дедлайн</label>
       <input type="date" class="filter-input" v-model="endDate"/>
     </span>
     <app-button type="info" @click="onSearch">Искать</app-button>

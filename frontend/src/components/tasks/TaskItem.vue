@@ -25,7 +25,7 @@
         <span v-if="v$.taskCopy.status.$error">Статус задачи обязателен к заполнению.</span>
       </div>
       <div class="form-control">
-        <label>Дэдлайн</label>
+        <label>Дедлайн</label>
         <input type="date" v-model="taskCopy.end_date"/>
       </div>
       <div class="buttons">
