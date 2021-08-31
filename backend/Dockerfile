@@ -12,9 +12,6 @@ RUN apt-get update \
   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false \
   && rm -rf /var/lib/apt/lists/* /var/lib/cache/* /var/log/*
 
-RUN addgroup --system django \
-    && adduser --system --ingroup django django
-
 # Requirements are installed here to ensure they will be cached.
 COPY requirements.txt /
 
